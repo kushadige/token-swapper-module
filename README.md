@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Project Documentation
 
-## Getting Started
+A token swapper module that allows users to swap tokens between two different wallets, built with React Hook Form, Shadcn-UI, and Tailwind.
 
-First, run the development server:
+### Built With
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+[![react-hook-form][React-hook-form]][React-hook-form-url]
+[![TypeScript][TypeScript]][TypeScript-url]
+[![Next.js][Next.js]][Next.js-url]
+[![Shadcn-ui][Shadcn-ui]][Shadcn-ui-url]
+[![Tailwind][Tailwind]][Tailwind-url]
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## # Prerequisites
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Ensure you have the following installed on your machine:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Node.js installed on your machine.
+- A package manager such as npm, yarn, pnpm, or bun.
 
-## Learn More
+## # Initial Setup
 
-To learn more about Next.js, take a look at the following resources:
+1. **Clone the repository:**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```sh
+   git clone <repository-url>
+   cd <repository-directory>
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+2. **Install dependencies:**
+   ```sh
+   npm install
+   ```
+3. **Run the development server:**
 
-## Deploy on Vercel
+   ```sh
+   npm run dev
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   **Note**: _By default the development server runs on port 3000. Change the port by setting the `PORT` environment variable._
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## # Workspace Structure
+
+- **src/**: Source code directory.
+  - **app/**: Application layout and routing.
+  - **components/**: Shared components used in the application.
+  - **modules/**: Located in the `src/modules/` directory. Contains the token swapper module.
+  - **lib/**: Library code, utilities.
+  - **modules/**: Application modules.
+    - **token-swapper/**: Token swapper module.
+      - **@types/**: Type definitions used throughout the token swapper module.
+      - **assets/**: Static assets such as icons for the module.
+      - **components/**: Contains React components.
+      - **data/**: Static data for the module.
+      - **schemas/**: Zod schemas for validating data structures.
+      - **services/**: Service classes and functions for handling business logic.
+      - **utils/**: Utility functions.
+      - **views/**: View components for different parts of the module.
+      - `index.tsx`: Module entry point.
+- **tailwind.config.ts**: Configuration for Tailwind CSS.
+- **tsconfig.json**: Configuration for TypeScript.
+- **components.json**: Contains metadata and configuration for UI components.
+- **package.json**: Manages project dependencies and scripts.
+- **postcss.config.js**: Configuration for PostCSS, a tool for transforming CSS with JavaScript.
+- **.gitignore**: Specifies intentionally untracked files to ignore.
+
+## # Dependencies
+
+- [**react-hook-form:**](https://react-hook-form.com/) Form validation library.
+- [**@hookform/resolvers:**](https://www.npmjs.com/package/@hookform/resolvers) Resolvers for react-hook-form.
+- [**zod:**](https://www.npmjs.com/package/zod) TypeScript-first schema declaration and validation library.
+- [**shadcn-ui:**](https://ui.shadcn.com/) Collection of UI components.
+- [**tailwindcss:**](https://tailwindcss.com/) Utility-first CSS framework.
+- [**typescript:**](https://www.typescriptlang.org/) Typed superset of JavaScript.
+- [**next:**](https://nextjs.org/) React framework for building server-rendered applications.
+
+## # Deployment
+
+The application is deployed to Vercel using the GitHub repository.
+
+[React-hook-form]: https://img.shields.io/badge/react--hook--form-0F172A?style=for-the-badge&logo=react-hook-form&logoColor=white
+[React-hook-form-url]: https://react-hook-form.com/
+[Shadcn-ui]: https://img.shields.io/badge/shadcn--ui-0F172A?style=for-the-badge&logo=shadcn-ui&logoColor=white
+[Shadcn-ui-url]: https://ui.shadcn.com/
+[TypeScript]: https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white
+[TypeScript-url]: https://www.typescriptlang.org/
+[Tailwind]: https://img.shields.io/badge/tailwindcss-0F172A?style=for-the-badge&logo=tailwindcss&logoColor=white
+[Tailwind-url]: https://tailwindcss.com/
+[Next.js]: https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white
+[Next.js-url]: https://nextjs.org/
